@@ -153,3 +153,29 @@ h1 {
     padding-top: 50px;
   }
 }
+/* Сетка галереи: две колонки на компьютере */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* Карточки галереи */
+.gallery-grid .section-card {
+  margin: 0;
+}
+
+/* Изображения сохраняют пропорции */
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* На смартфонах — одна колонка */
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
