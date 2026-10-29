@@ -1,21 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главы — Эксперимент</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapters-list {
+      max-width: 760px;
+      margin: 2rem auto;
+      padding-left: 1.5rem;
+      line-height: 2;
+    }
+
+    .chapters-list a {
+      text-decoration: none;
+    }
+
+    .chapters-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
 <body>
+  <header class="hero">
+    <p class="eyebrow">Фэнтези · LitRPG</p>
+    <h1>Эксперимент</h1>
+    <p class="subtitle">Главы романа</p>
+    <p class="byline">Вадим Лебедев (ака thesnailshell)</p>
+  </header>
 
-  <main class="container page-main">
-    <p><a href="index.html">← На главную</a></p>
-
-    <h1>Главы</h1>
-    <p>«Эксперимент» — фэнтези · LitRPG</p>
-
-    <ol class="chapters-list">
-      <li><a href="chapter-01.html">Глава 1</a></li>
-    </ol>
-
-    <p><a href="https://author.today/work/661914">
-      Читать на Author.Today
-    </a></p>
-
-    <p><a href="index.html">← На главную</a></p>
+  <main class="container">
+    <section class="intro">
+      <p><a href="index.html">← На главную</a></p>
+      <h2>Все главы</h2>
+      <ol class="chapters-list">
+        <li><a href="chapter-01.html">Глава 1</a></li>
+      </ol>
+      <p>
+        <a href="https://author.today/work/661914">
+          Читать на Author.Today →
+        </a>
+      </p>
+    </section>
   </main>
 
+  <footer class="footer">
+    <p>© Вадим Лебедев · Проект «Эксперимент»</p>
+  </footer>
 </body>
 </html>
